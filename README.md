@@ -24,7 +24,7 @@
 </div>
 
 - Change the skin of your champion, your ward, other champions, towers, minions, and jungle monsters in the game.
-- 给你的英雄，眼，其他英雄，防御塔，小兵和野怪换肤
+- 给你的英雄，眼，其他英雄，防御塔，小兵和野怪换肤 test
 - Automatic skin database update.
 - 自动皮肤数据库更新
 - Support for spectator mode.
