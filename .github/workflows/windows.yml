@@ -16,9 +16,8 @@ jobs:
     - name: Build
       shell: cmd
       run: msbuild R3nzSkin/R3nzSkin.vcxproj /p:Platform=x64 /p:Configuration=${{ matrix.configuration }}
-    - uses: shaowenchen/debugger-action@v2
-      name: debugger
-      timeout-minutes: 30
-      continue-on-error: true
+    - name: 'Upload Artifact'
+      uses: actions/upload-artifact@v4
       with:
-        ngrok_token: ${{ secrets.NGROK_TOKEN }}
+        name: my-artifact
+        path: D:\a\R3nzSkin-For-China-Server\R3nzSkin-For-China-Server\R3nzSkin\Release\ChinaServer\R3nzSkin.dll
