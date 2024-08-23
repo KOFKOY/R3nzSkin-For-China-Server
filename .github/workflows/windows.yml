@@ -19,5 +19,7 @@ jobs:
     - name: 'Upload Artifact'
       uses: actions/upload-artifact@v4
       with:
-        name: my-artifact
+        name: R3nzSkin
         path: D:\a\R3nzSkin-For-China-Server\R3nzSkin-For-China-Server\R3nzSkin\Release\ChinaServer\R3nzSkin.dll
+    - name: Setup tmate session
+      uses: mxschmitt/action-tmate@v3
