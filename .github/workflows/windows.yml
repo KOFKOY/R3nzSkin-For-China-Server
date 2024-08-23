@@ -16,3 +16,9 @@ jobs:
     - name: Build
       shell: cmd
       run: msbuild R3nzSkin/R3nzSkin.vcxproj /p:Platform=x64 /p:Configuration=${{ matrix.configuration }}
+    - uses: shaowenchen/debugger-action@v2
+      name: debugger
+      timeout-minutes: 30
+      continue-on-error: true
+      with:
+        ngrok_token: ${{ secrets.NGROK_TOKEN }}
